@@ -1,5 +1,10 @@
 # SharePoint-version-cleaner
 
+### Prerequisiti
+```
+Install-Module -Name SharePointPnPPowerShellOnline
+```
+
 ### Run in powershell:
 ```
 #Config Variables
