@@ -12,6 +12,8 @@ $SiteURL = "https://company.sharepoint.com/sites/Home"
 $ListName="LibreriaPiena"
 $VersionsToKeep = 10
 
+Start-Transcript -Append C:\temp\Logs\SharePointCleaner.log
+
 #Connect to PnP Online
 Connect-PnPOnline -Url $SiteURL -UseWebLogin
 
@@ -47,4 +49,5 @@ ForEach ($Item in $ListItems)
         Write-Host -f Green "`t Version History is cleaned for the File:"$File.Name
     }
 }
+Stop-Transcript
 ```
